@@ -62,7 +62,7 @@
 		$filter = new MovieFilter();
 		$d = new Database();
 
-		$currentPage = intval($_GET["page"]) ?? 0;
+		$currentPage = intval($_GET["page"] ?? 0);
 		$sortKey = $_GET["sort"] ?? "title";
 		$sortReverse = $_GET["reverse"] ?? false;
 
